@@ -20,9 +20,3 @@ A Java program to rank and sort my fragrances and recommend one based on the wea
 - Gson
 - CSV file
 - Open-Meteo weather API
-
-## Docs
-
-- [Eisenhower Matrix](docs/eisenhower_matrix.pdf)
-
-![System Diagram](docs/system_diagram.png)
