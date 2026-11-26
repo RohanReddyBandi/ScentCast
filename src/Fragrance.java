@@ -10,12 +10,12 @@ public class Fragrance {
         this.name = name;
         this.price = price;
         this.seasons = new ArrayList<>();
-        this.seasons.add(season);
+        this.seasons.add(season.toLowerCase());
         this.rank = 0;
     }
 
     public void removeSeason(String season) {
-        seasons.remove(season);
+        seasons.remove(season.toLowerCase());
     }
 
     public String getName() {
@@ -37,13 +37,16 @@ public class Fragrance {
     public void setPrice(double price) {
         this.price = price;
     }
+
     public void setRank(int rank) {
-        this.rank = rank;
+        if (rank >= 0) {
+            this.rank = rank;
+        }
     }
 
     public void addSeason(String season) {
-        if (!seasons.contains(season)) {
-            seasons.add(season);
+        if (!seasons.contains(season.toLowerCase())) {
+            seasons.add(season.toLowerCase());
         }
     }
 
