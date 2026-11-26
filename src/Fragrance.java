@@ -28,7 +28,7 @@ public class Fragrance {
         return rank;
     }
     public ArrayList<String> getSeasons() {
-        return seasons;
+        return new ArrayList<>(seasons);
     }
 
     public void setName(String name) {
